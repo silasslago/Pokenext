@@ -1,13 +1,13 @@
-import NavBar from "@/components/NavBar/navbar";
-import Link from "next/link";
+import Image from "next/image";
+import styles from "../styles/home.module.css";
+
 
 export default function Home() {
+
   return (
-    <div>
-      <NavBar />
-      <main>
-        <h1>Pokenext</h1>
-      </main>
-    </div>
+    <>
+      <Image src="/images/pokemon.jpg" width="800" height="250" alt="Logo escrita Pokémon maiuscula, em amarelo com bordas azuis" />
+      <h1 className={styles.title}>Pokenext</h1>
+    </>
   );
 }
